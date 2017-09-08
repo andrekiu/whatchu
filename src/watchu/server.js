@@ -3,7 +3,7 @@ const http = require('http');
 const PORT = 3000;
 
 async function requestHandler(request, response) {
-  response.end('Hello world!');
+  response.end('Hello world! from another version');
 }
 
 const server = http.createServer(requestHandler);
