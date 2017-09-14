@@ -8,7 +8,7 @@
     "url": "git://github.com/andrekiu/whatchu.git"
   },
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "node ./api/server.js &  webpack-dev-server",
     "test": "jest",
     "flow": "flow",
     "lint:js": "eslint .",

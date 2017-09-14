@@ -81,5 +81,10 @@ module.exports = (env = { NODE_ENV: 'development' }) => ({
     contentBase: 'static/',
     hot: true,
     port: PORT,
+    proxy: env.NODE_ENV !== 'production'
+      ? {
+       '/api': 'http://localhost:5000'
+      }
+      : undefined
   },
 });
